@@ -38,7 +38,7 @@ class Stack {
     };
 }
 
-let Data = new Stack(0 , []);
+let Data = new Stack(0,[]);
 Data.push(100);
 Data.push(200);
 Data.push(300);
