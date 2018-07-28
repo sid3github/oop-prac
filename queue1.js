@@ -1,3 +1,5 @@
+//program for queue using class.
+
 class Queue {
     constructor(size,items){
         this.size = size;

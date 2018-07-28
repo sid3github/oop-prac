@@ -1,3 +1,5 @@
+//program for queue using function prototype.
+
 function Queue(){
     this.size = 0;
     this.items = [];
