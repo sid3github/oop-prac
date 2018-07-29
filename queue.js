@@ -16,6 +16,14 @@ Queue.prototype.isEmpty = function () {
     }
 };
 
+Queue.prototype.peek = function () {
+    if(this.isEmpty()){
+        return 'Stack is empty!';
+    }else{
+        return 'the stack has some elements in it!';
+    }
+};
+
 Queue.prototype.shift = function () {
     if(this.isEmpty()) {
         return 'Stack is empty!';
@@ -40,6 +48,7 @@ Queue.prototype.search = function (element) {
 
 let Data = new Queue();
 
+console.log(Data.peek());
 Data.unshift(1);
 Data.unshift(2);
 Data.unshift(3);
@@ -50,6 +59,7 @@ Data.shift();
 console.log(Data);
 console.log(Data.search(1));
 console.log(Data.search(10));
+console.log(Data.peek());
 
 
 

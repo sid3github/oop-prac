@@ -17,6 +17,14 @@ class Queue {
         }
     };
 
+    peek(){
+        if(this.isEmpty()){
+            return 'stack is empty';
+        }else{
+            return 'the stack has some elements in it!';
+        }
+    };
+
     shift(){
         if(this.isEmpty()){
             return 'stack is empty';
@@ -41,6 +49,8 @@ class Queue {
 }
 
 let Data = new Queue(0, []);
+
+console.log(Data.peek());
 Data.unshift(11);
 Data.unshift(22);
 Data.unshift(33);
